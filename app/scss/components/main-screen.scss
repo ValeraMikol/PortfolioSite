@@ -1,0 +1,54 @@
+.first-screen{
+    position: relative;
+    width: 100%;
+    height: rem(782);
+
+    background: url(../../img/main-screen.png) 0 0 no-repeat  ;
+    background-size: cover;
+    &::before{
+        content: "";
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+
+    }
+    &__container{
+        
+
+        position: relative;
+        z-index: 9;
+        @include container(rem(1170));
+        padding: rem(185) rem(20) 0;
+        
+    }
+    &__title{
+        margin: 0;
+        color: white;
+        font-size: 60px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;        
+        text-align: center;
+    }
+    &__text{
+        color: #ffffff;       
+        font-size: 22px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;      
+        text-align: center;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+
+
+    }
+    &__button{
+        border: rem(2) solid white;
+    }
+    
+}

@@ -1,0 +1,35 @@
+.header {
+    position: relative;
+    background-color: $c-white;
+    height: rem(123);
+
+ &__container{
+     @include container(rem(1170));
+     padding: 0 rem(20);
+     @include dflex(center, wrap , space-between);
+     height: 100%;
+     
+
+
+ }
+ &__logo{
+    
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: rem(25);
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    
+    text-align: center;
+    text-decoration: none;
+
+ }
+ &__search-menu{
+     @include dflex(center, wrap, flex-end);
+     flex: 1;
+ }
+ &__search{
+     margin-left: rem(20);
+ }
+}
