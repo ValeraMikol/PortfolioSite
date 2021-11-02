@@ -1,35 +1,50 @@
+.wrapper{
+    width:rem(1335);
+    margin: 0 auto;
+}
+
+
 .header {
     position: relative;
-    background-color: $c-white;
-    height: rem(123);
+    padding: rem(22) 0 0 0;
+    margin: 0 0 rem(82) 0;
 
- &__container{
-     @include container(rem(1170));
-     padding: 0 rem(20);
-     @include dflex(center, wrap , space-between);
-     height: 100%;
-     
+}
+.header__body{
+    @include dflex(center, wrap, space-between);
 
-
- }
- &__logo{
+}
+.link{
     
-    color: #212121;
-    font-family: "Open Sans";
-    font-size: rem(25);
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    
-    text-align: center;
     text-decoration: none;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;           
+    color: #000000;
+    margin: 0 rem(25) 0 0;
+}
+.container {
+    padding: 0 rem(30);
+    margin: 0 auto;
+}
+.header-list {
+    padding-left: 0;
+     display: block;
+     @include dflex(center, wrap, flex-start);
+    
+    list-style-type: none;
 
- }
- &__search-menu{
-     @include dflex(center, wrap, flex-end);
-     flex: 1;
- }
- &__search{
-     margin-left: rem(20);
- }
+		&__item {
+           
+           
+
+		}
+}
+.header-logo {
+
+		&__img {
+		}
+}
+.img {
 }

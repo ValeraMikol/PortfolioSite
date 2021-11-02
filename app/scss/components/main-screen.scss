@@ -1,54 +1,88 @@
-.first-screen{
-    position: relative;
-    width: 100%;
-    height: rem(782);
+.products {
+    @include dflex(center, wrap, space-between);
+    margin: rem(30) 0 rem(172) 0;
 
-    background: url(../../img/main-screen.png) 0 0 no-repeat  ;
-    background-size: cover;
-    &::before{
-        content: "";
-        position:absolute;
-        top: 0;
-        left: 0;
+    &__column {
+        flex: 1 0 25%;
+    }
+}
+.item-products {
+
+    &__body{
+        @include dflex(flex-start, no-wrap, space-between);
+        padding: rem(30);
+
+        
+    }
+
+    &__image {
+        img{
+            height: auto;
         width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.7);
-
-    }
-    &__container{
         
+        }
+    }
 
-        position: relative;
-        z-index: 9;
-        @include container(rem(1170));
-        padding: rem(185) rem(20) 0;
+    &__name {
         
-    }
-    &__title{
-        margin: 0;
-        color: white;
-        font-size: 60px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;        
-        text-align: center;
-    }
-    &__text{
-        color: #ffffff;       
-        font-size: 22px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;      
-        text-align: center;
-    }
-    &__buttons{
-        display: flex;
-        justify-content: center;
-
+        margin: 0 0 rem(5) 0;
+        color: #070707;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: left;
+        text-transform: uppercase;
 
     }
-    &__button{
-        border: rem(2) solid white;
-    }
+
     
 }
+.item-products__colors{
+    @include dflex(center,wrap,flex-start);
+}
+.item-products {
+   
+
+    &__color--gray {
+        width: 8px;
+        height: 8px;
+        background-color: #c7c7c7;
+        border-radius: 50%;
+    }
+
+    &__color--lgray {
+        width: 8px;
+        height: 8px;
+        background-color: #e9e9e9;
+        border-radius: 50%;
+    }
+
+    &__color--gold {
+        width: 8px;
+        height: 8px;
+        background-color: #d9b982;
+        border-radius: 50%;
+    }
+
+    &__color--db {
+        width: 8px;
+        height: 8px;
+        background-color: #d0c398;
+        border-radius: 50%;
+    }
+
+    &__color--lb {
+        width: 8px;
+        height: 8px;
+        background-color: #e9dfbd;
+        border-radius: 50%;
+    }
+
+    &__color--black {
+        width: 8px;
+        height: 8px;
+        background-color: #020202;
+        border-radius: 50%;
+    }
+}
+

@@ -1,28 +1,59 @@
-.menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-    &__item{
-        margin: 0 0 0 rem(20);
+.settings-top {
+    @include dflex(center, wrap, space-between);
+    margin: 0 0 rem(30px) 0;
 
+    &__item {
+        color: #000000;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
     }
-    &__link{
-        color: #212121;
-        
-        font-size: 20px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
-        text-decoration: none;
-        
-        text-align: center; 
-        transition: color 0.4s ease-in-out;
-        &:hover{
-            color: green;
-        }
-    }
-
-
 }
+.settings-center {
+   
+
+    &__body{
+        position: relative;
+        @include dflex(center, wrap, flex-start);
+        margin:rem(30) 0 0 0 ;
+    }
+    &__column {
+        margin: 0 rem(117) 0 0;
+
+        
+       
+    }
+
+    &__name {
+        margin: 0 0 rem(10) 0;
+        &--clear{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+    }
+
+    &__variants {
+        @include dflex(center, wrap, space-between);
+    }
+}
+.item-variants {
+     
+
+    &__text {
+        display: block;
+        margin: 0 rem(20) 0 0;
+        color: #000000;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+
+       
+        
+
+    }
+}
+

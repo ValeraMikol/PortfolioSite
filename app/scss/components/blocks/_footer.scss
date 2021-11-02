@@ -1,0 +1,24 @@
+.footer {
+    padding-bottom:rem(20) ;
+
+    &__text {
+        color: #000000;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        color: #000000;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-right: rem(10);
+    }
+}
+.footer-body {
+    @include dflex(center, wrap, space-between);
+}
