@@ -1,17 +1,17 @@
-.wrapper{
-   
-    margin: 0 auto;
-}
-
-
 .header {
-    position: relative;
+    
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    
     padding: rem(22) 0 0 0;
     margin: 0 0 rem(82) 0;
 
 }
 .header__body{
     @include dflex(center, wrap, space-between);
+    
 
 }
 .link{
@@ -29,6 +29,7 @@
     margin: 0 auto;
 }
 .header-list {
+    
     padding-left: 0;
      display: block;
      @include dflex(center, wrap, flex-start);
@@ -50,4 +51,25 @@
 		}
 }
 .img {
+}
+
+.main-columns{
+    @include dflex(flex-start, no-wrap, space-between);
+}
+.main {
+
+    &__column {
+        flex: 0 0 50%;
+        
+    }
+}
+.left-column {
+
+    &__image {
+        img{
+            width: 100%;
+        }
+    }
+}
+.right-column {
 }

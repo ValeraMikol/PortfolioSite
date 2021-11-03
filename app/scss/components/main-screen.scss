@@ -1,27 +1,43 @@
 .products {
+
     @include dflex(center, wrap, space-between);
     margin: rem(30) 0 rem(172) 0;
 
     &__column {
+        width: 100%;
         flex: 1 0 25%;
-        height: rem(550);
+        height: rem(700);
+        margin-bottom: rem(41);
+        transition-duration: 0.5;
+        &:hover{
+            transform: rotateY(180deg);
+        }
+        
+        
     }
 }
 .item-products {
 
     &__body{
         @include dflex(flex-start, no-wrap, space-between);
-        padding: rem(30);
+        padding: rem(30) rem(30) 0 rem(30);
 
         
     }
 
     &__image {
-        img{
-            height: auto;
         width: 100%;
-        
+        height: auto;
+        margin: 0;
+        &:hover{
+            transform: rotateY(180deg);
         }
+
+        img{
+           width: 100%;
+           height: rem(598);
+         
+           }
     }
 
     &__name {
@@ -41,7 +57,8 @@
 .item-products__colors{
     @include dflex(center,wrap,flex-start);
     padding:  0 0 0 rem(30);
-    margin-bottom: rem(41);
+    margin-top: rem(19);
+    
 }
 .item-products {
     

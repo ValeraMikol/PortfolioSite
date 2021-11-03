@@ -20,6 +20,11 @@
     }
     &__column {
         margin: 0 rem(117) 0 0;
+        &--3{
+            width: rem(122);
+            
+        }
+    
 
         
        
@@ -27,29 +32,54 @@
 
     &__name {
         margin: 0 0 rem(10) 0;
+        color: #000000;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: normal;
         &--clear{
             position: absolute;
             top: 0;
             right: 0;
+            color: #000000;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
         }
 
     }
 
     &__variants {
-        @include dflex(center, wrap, space-between);
+        @include dflex(center, wrap, flex-start);
+        
     }
 }
 .item-variants {
+    
      
 
     &__text {
         display: block;
-        margin: 0 rem(20) 0 0;
         color: #000000;
         font-family: Lato;
         font-size: 12px;
         font-weight: 300;
-        text-transform: uppercase;
+        margin-right: rem(20);
+        
+
+        &--3{
+            display: block;
+            color: #000000;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 300;
+            flex: 0 0 33.333%;
+        }
+        
+        
 
        
         
