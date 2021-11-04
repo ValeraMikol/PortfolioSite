@@ -1,31 +1,40 @@
 .footer {
-    position: relative;
-    padding-bottom:rem(20) ;
+    p{
+        font-size: rem(17);
+    }
+    &__body {
+        @include dflex(center,wrap,space-between);
+    }
 
     &__text {
         color: #000000;
         font-family: Lato;
-        font-size: 12px;
+        
         font-weight: 300;
         text-transform: uppercase;
-        &--center{
-            position: absolute;
-            bottom: 0;
-            left: 35%;
-            padding-bottom: rem(20);
-        }
     }
 
-    &__link {
-        color: #000000;
+    &__menu {
+        transform: translateX(-110px);
+        
+
+
+    }
+    &__list{
+        @include dflex(center,wrap,space-between);
+        
+    }
+
+    &__item {
         font-family: Lato;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 300;
         text-transform: uppercase;
-        text-decoration: none;
-        margin-right: rem(12);
+        list-style-type: none;
+        margin-right:rem(16) ;
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
     }
-}
-.footer-body {
-    @include dflex(center, wrap, space-between);
 }

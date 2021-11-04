@@ -6,8 +6,15 @@
 @import "./components/index";
 @import "./components/blocks/header";
 @import "./components/blocks/menu";
-@import "./components/product";
+@import "./components/main-screen";
 
-@import "./components/blocks/footer"
+@import "./components/blocks/footer";
+@import "./components/shop";
 
 // MAIN PAGE
+
+.container {
+    width: rem(1818);
+    margin: 0 auto;
+    
+}
