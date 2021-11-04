@@ -58,7 +58,7 @@
         font-family: Lato;
         font-size: 16px;
         font-weight: 300;
-        line-height: 27px;
+        line-height: rem(27);
         text-transform: uppercase;
         text-decoration: none;
 
@@ -67,14 +67,14 @@
 .categories {
 
     &__text {
-        margin: rem(105) 0;
+        margin: rem(105) 0 ;
         color: #040404;
         font-family: Lato;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 300;
         font-style: normal;
         letter-spacing: normal;
-        line-height: 26.96px;
+        line-height: rem(29.96);
         text-align: center;
         text-transform: uppercase;
     }

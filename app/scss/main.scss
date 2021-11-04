@@ -14,7 +14,6 @@
 // MAIN PAGE
 
 .container {
-    width: rem(1818);
-    margin: 0 auto;
-    
-}
+    @include container($wrap); 
+     
+ }

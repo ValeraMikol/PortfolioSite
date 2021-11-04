@@ -1,52 +1,83 @@
-.header {
-    width: 100%;
-    padding-top: rem(30);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 50;
-
-
-    &__container {
-        
-        
-
-    }
-
-    &__body {
-        @include dflex(center,wrap,space-between);
-
-    }
-}
-
-.header-list {
-    padding: 0;
-    @include dflex(center,wrap,space-between);
-    list-style-type: none;
-
-
-    &__item {
-        
-        margin-right: rem(16);
-        &:last-child{
-            margin: 0;
-        }
-    }
-}
-.link {
-    text-decoration: none;
-    color: #000000;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
+.shop-header{
+    position: relative;
     
-   
+    
 }
-.header-logo {
 
-    &__img {
-    }
+
+.main {
+    margin-top:rem(-20);
 }
-.img {
+.filters {
+    margin-top: rem(120);
+    padding-bottom: rem(41) ;
+
+		&__container {
+		}
+
+		&__body {
+            @include dflex(center,wrap,space-between);
+		}
+
+		&__item {
+            color: #000000;
+            font-family: Lato;
+            font-size: rem(16);
+            font-weight: 300;
+            text-transform: uppercase;
+            text-decoration: none;
+		}
 }
+
+.products {
+    margin-bottom: rem(165);
+
+		&__body {
+            @include dflex(center,wrap,space-between);
+		}
+
+		&__column {
+            flex: 1 1 25%;
+            height: rem(770);
+           
+		}
+}
+.item-column {
+
+		&__img {
+		}
+
+		&__body {
+            @include dflex(flex-start,wrap,space-between);
+            padding: rem(38) rem(50) 0 rem(50);
+		}
+
+		&__price {
+            color: #070707;
+            font-family: Lato;
+            font-size: rem(16);
+            font-weight: 300;
+            text-transform: uppercase;
+		}
+
+		&__icon {
+            cursor: pointer;
+		}
+
+		&__circles {
+            @include dflex(center,wrap,flex-start);
+            padding-left:rem(50) ;
+            padding-bottom: rem(50);
+            margin-top: rem(25);
+		}
+
+		&__circle {
+            margin-right: rem(11);
+            cursor: pointer;
+		}
+}
+
+.product-image{
+    width: 100%;
+}
+ 

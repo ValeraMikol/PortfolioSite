@@ -1,4 +1,5 @@
 .footer {
+    padding: 0 rem(45) rem(45) rem(45);
     p{
         font-size: rem(17);
     }
@@ -15,7 +16,7 @@
     }
 
     &__menu {
-        transform: translateX(-110px);
+        transform: translateX(rem(-110));
         
 
 
@@ -27,7 +28,7 @@
 
     &__item {
         font-family: Lato;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 300;
         text-transform: uppercase;
         list-style-type: none;
