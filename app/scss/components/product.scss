@@ -1,0 +1,129 @@
+.header-bottom{
+    @include dflex(center,wrap,space-between);
+    margin: rem(130) 0 rem(91) 0;
+}
+
+
+.main {
+
+    &__body {
+        @include dflex(flex-start,wrap,space-between);
+    }
+
+    &__columns {
+        flex: 0 0 50%;
+        width: 100%;
+        height: auto;
+    }
+
+    &__columns--1 {
+    }
+
+    &__img {
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;  
+        }
+        
+
+    }
+
+    &__columns--2 {
+        position: relative;
+        height: rem(1195);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+}
+.item-column {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+    
+    
+    
+
+    &__price {
+        margin-bottom: rem(42);
+    }
+
+    &__text {
+        margin-bottom: rem(83);
+    }
+}
+.item-settings {
+    @include dflex(center,wrap,space);
+    margin-bottom:rem(53) ;
+    &:last-child{
+        margin: 0;
+    }
+
+    &__name {
+        
+        
+    }
+
+    &__variants {
+        @include dflex(center,wrap,space)
+        
+    }
+
+
+    &__color {
+        margin-right:rem(10); 
+        
+    }
+
+    &__size {
+        margin-right:rem(20); 
+       
+    }
+
+    &__quantity {
+        margin-right:rem(13);
+        
+    }
+}
+.item-cart {
+    @include dflex(center,wrap,space-between);
+    width: 561px;
+    height: 64px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    opacity: 0.5;
+
+
+    &__text {
+        padding-left: rem(48);
+        color: #070707;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        line-height: 26.97px;      
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &__img {
+        padding-right: rem(48);
+        cursor: pointer;
+    }
+}
+.item-bottom {
+    @include dflex(center,wrap,space-between);
+   
+    &__text {
+    }
+}
+.main-column__body{
+    width: rem(601);
+    
+}
+
