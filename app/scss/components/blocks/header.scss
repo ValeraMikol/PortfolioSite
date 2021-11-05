@@ -5,35 +5,33 @@
     top: 0;
     left: 0;
     z-index: 50;
-    
 
 
-    &__container {
-        
-        
 
-    }
+    &__container {}
 
     &__body {
-        @include dflex(center,wrap,space-between);
+        @include dflex(center, wrap, space-between);
 
     }
 }
 
 .header-list {
     padding: 0;
-    @include dflex(center,wrap,space-between);
+    @include dflex(center, wrap, space-between);
     list-style-type: none;
 
 
     &__item {
-        
+
         margin-right: rem(16);
-        &:last-child{
+
+        &:last-child {
             margin: 0;
         }
     }
 }
+
 .link {
     text-decoration: none;
     color: #000000;
@@ -41,13 +39,18 @@
     font-size: rem(16);
     font-weight: 300;
     text-transform: uppercase;
-    
-   
+
+
 }
+
 .header-logo {
+    position: relative;
 
     &__img {
+        @include adapt-img;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-}
-.img {
 }

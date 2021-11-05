@@ -1,19 +1,17 @@
 .first-screen {
-    
+
     position: relative;
-    
 
 
-    &__bg {
-        
-    }
+
+    &__bg {}
 
     &__subtitle {
         padding-bottom: rem(44);
         position: absolute;
         top: 0;
         left: 0;
-        right:0;
+        right: 0;
         bottom: 0;
         display: flex;
         align-items: flex-end;
@@ -27,19 +25,23 @@
 
     }
 }
+
 /*------------CATEGORIES----------------------------------------------------------------------*/
 
 .categories {
-    img{
+
+
+    img {
         width: 100%;
         height: rem(1210);
+
     }
 
     &__body {
-        @include dflex(center,wrap,space-between);
+        @include dflex(center, wrap, space-between);
     }
 
-    &__column { 
+    &__column {
         position: relative;
         flex: 1 1 50%;
     }
@@ -49,7 +51,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        right:0;
+        right: 0;
         bottom: 0;
         display: flex;
         align-items: flex-end;
@@ -64,10 +66,11 @@
 
     }
 }
+
 .categories {
 
     &__text {
-        margin: rem(105) 0 ;
+        margin: rem(105) 0;
         color: #040404;
         font-family: Lato;
         font-size: rem(16);
@@ -79,7 +82,5 @@
         text-transform: uppercase;
     }
 }
+
 /*------------footer----------------------------------------------------------------------*/
-
-
-
