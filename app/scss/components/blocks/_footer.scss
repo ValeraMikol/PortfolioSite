@@ -9,21 +9,16 @@
 
     &__text {
         color: #000000;
-        font-family: Lato;
-        
+        font-family: Lato;  
         font-weight: 300;
         text-transform: uppercase;
     }
 
     &__menu {
         transform: translateX(rem(-110));
-        
-
-
     }
     &__list{
-        @include dflex(center,wrap,space-between);
-        
+        @include dflex(center,wrap,space-between);     
     }
 
     &__item {

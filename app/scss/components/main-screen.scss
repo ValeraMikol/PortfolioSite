@@ -34,6 +34,8 @@
     img {
         width: 100%;
         height: rem(1210);
+        position: relative;
+        z-index: 1;
 
     }
 
@@ -44,6 +46,15 @@
     &__column {
         position: relative;
         flex: 1 1 50%;
+        transition: 0.3s;
+        &:hover img{
+            opacity: 0;
+            transition: 0.3s;
+        }
+    }
+    &__text{
+        
+
     }
 
     &__name {
@@ -82,5 +93,20 @@
         text-transform: uppercase;
     }
 }
-
+.item-category__text{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    text-align: justify;
+    max-width: rem(300);
+    transform: translateX(-50%);
+    color: #040404;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        font-style: normal;
+         text-transform: uppercase;
+    
+    
+}
 /*------------footer----------------------------------------------------------------------*/

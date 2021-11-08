@@ -44,7 +44,7 @@
     &__title {
         color: #000000;
         font-family: Lato;
-        font-size: 20px;
+        font-size: rem(20);
         font-weight: 300;
         line-height: normal;
         text-align: left;
@@ -73,12 +73,9 @@
     &__text--2 {
         color: #231f20;
         font-family: Lato;
-        font-size: 20px;
+        font-size: rem(20);
         font-weight: 300;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 37.95px;
-        text-align: left;
+        line-height: rem(37.95);
         margin-bottom: rem(30);
     }
 
@@ -88,5 +85,4 @@
 .img-about {
     width: 100%;
     height: auto;
-
 }

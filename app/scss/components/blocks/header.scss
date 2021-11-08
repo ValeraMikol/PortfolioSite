@@ -17,15 +17,15 @@
 }
 
 .header-list {
+    &:hover li a{
+        color:#939598 ; 
+        transition: all 0.3s;  
+    }
     padding: 0;
     @include dflex(center, wrap, space-between);
     list-style-type: none;
-
-
-    &__item {
-
+    &__item {  
         margin-right: rem(16);
-
         &:last-child {
             margin: 0;
         }
@@ -39,8 +39,6 @@
     font-size: rem(16);
     font-weight: 300;
     text-transform: uppercase;
-
-
 }
 
 .header-logo {
