@@ -37,13 +37,16 @@
 	}
 
 	&__column {
+            position: relative;
       flex: 1 1 25%;
       height: rem(770);
 	}
 }
+
 .item-column {
 
 	&__img {
+            
 	}
 
 	&__body {
@@ -77,6 +80,20 @@
 }
 
 .product-image{
+      z-index: 2;
     width: 100%;
+    position: relative;
+    transition: 0.5s;
+    &__active{     
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;     
+    }
+    &:hover {
+      opacity: 0;
+      transition: 0.5s;
+    }
+    
 }
  

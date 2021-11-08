@@ -13,6 +13,7 @@
 
 
 .main {
+    
 
     &__body {
         @include dflex(flex-start,wrap,space-between);
@@ -42,7 +43,9 @@
     }
 
     &__columns--2 {
-        position: relative;
+        position: sticky;
+        top:rem(-20);
+        right: 0;
         height: rem(1195);
         display: flex;
         align-items: center;
@@ -125,8 +128,18 @@
     height: 64px;
     border: 1px solid #000000;
     background-color: #ffffff;
-    opacity: 0.5;
+    
     margin-bottom: rem(87);
+    transition: 0.5s;
+    &:hover{
+        transition: 0.5s;
+        background-color: #000000; 
+        p{
+            transition: 0.5s;
+            color: #ffffff;
+        } 
+    }
+    
 
 
     &__text {
@@ -138,6 +151,7 @@
         line-height: 26.97px;      
         text-transform: uppercase;
         cursor: pointer;
+        transition: 0.5s;
     }
 
     &__img {
@@ -200,8 +214,7 @@
         @include dflex(center,wrap,flex-start);
         padding-left:rem(50) ;
         padding-bottom: rem(50);
-        margin-top: rem(25);
-        
+        margin-top: rem(25);     
     }
 
     &__circle {
@@ -211,3 +224,4 @@
 }
 .product-image {
 }
+
