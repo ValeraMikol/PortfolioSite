@@ -109,6 +109,10 @@
         margin-right:rem(10); 
         transform: translateX(78px);
         
+        &:hover{
+              
+        }
+        
     }
 
     &__size {
@@ -165,6 +169,7 @@
    
     &__text {
         margin-right: rem(55);
+        cursor:pointer;
     }
 }
 .main-column__body{
