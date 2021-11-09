@@ -18,6 +18,6 @@
 // MAIN PAGE
 
 .container {
-    @include container($wrap); 
+    @include container(rem($wrapRem)); 
      
  }
