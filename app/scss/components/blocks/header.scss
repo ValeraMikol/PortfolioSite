@@ -57,7 +57,7 @@
         
     }
 }
-
+/*----------stories------------------------------------------------------------------------------------------------*/
 
 .stories {
     
@@ -154,6 +154,9 @@
 		}
 }
 
+/*----------assistanse------------------------------------------------------------------------------------------------*/
+
+
 .assistanse-link {
     display: block;
     margin-bottom: rem(32);
@@ -174,6 +177,32 @@
 }
 .assistanse-email {
     border: none;
+}
+
+/*--------------adress--------------------------------------------------------------------------------------------*/
+.header-block {
+
+    &__container {
+    }
+}
+
+.adress {
+
+    &__list {
+        @include dflex(center,wrap,flex-start);
+        list-style-type: none;  
+    }
+
+    &__link {
+        margin-right:rem(25) ;
+        color: #000000;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
 }
 
 
