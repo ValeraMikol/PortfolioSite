@@ -127,7 +127,7 @@
         font-size: rem(16);
         font-weight: 300;
         text-transform: uppercase;
-        cursor: pointer;
+        cursor: pointer;   
     }
 }
 
@@ -186,116 +186,73 @@
     }
 }
 
-.adress {
+/*--------------cart--------------------------------------------------------------------------------------------*/
+.card-page {
 
-    &__list {
-        
-        @include dflex(center,wrap,flex-start);
-        list-style-type: none; 
-        &:hover .adress-page__body{
-            display: block;
-           
-        } 
-    }
-
-    &__link {
-        position: relative;
-        z-index: 2;
-        margin-right:rem(25) ;
-        color: #000000;
-        font-family: Lato;
-        font-size: rem(16);
-        font-weight: 300;
-        text-transform: uppercase;
-        text-decoration: none;
-        
-    }
-    
-}
-
-.adress-page {
-
-    &__container {
-        
-        
+    &__title {
     }
 
     &__body {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: rem(120) 0 0 0;
-        background-color: #fff;
         
     }
 
     &__columns {
-        @include dflex(center,wrap,flex-start);
+        @include dflex(center,wrap,space-between);
     }
 
-    &__column {
-        flex: 1 1 50%;
-        
-        
+    &__column {         
+        flex: 1 1 25%;
+        display: flex;
+        position: relative;
     }
 }
-.item-adress {
+.item-card {
+    
+    &__img {
+        @include dflex (center,wrap,center);
+        width: 143px;
+        height: 178px;
+        border: 1px solid #000000;
+        opacity: 0.85;
+    }
+
+    &__body {
+        position: absolute;
+        top: 0;
+        right: 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.card-body {
 
     &__name {
-        color: #000000;
-        font-family: Lato;
-        font-size: rem(16);
-        font-weight: 300;
-        line-height: rem(20);
-        text-transform: uppercase;
     }
 
-    &__form {
-        width: rem(338);
-        border-bottom: 1px solid #939598; 
-        margin-bottom: rem(31);
-        padding: rem(22) 0;
-        color: #939598;
-        input{
-            display: block;
-            border: none;  
-        }
-
+    &__price {
     }
 
-    &__edit {
-        position: absolute;
-        right: 0;
-        top: 0;
-        color: #000000;
-        font-family: Lato;
-        font-size: rem(16);
-        font-weight: 300;
-        line-height: rem(20);
-        text-transform: uppercase;
-        &:hover{
-            text-decoration: underline;
-        }
+    &__quantity {
+    }
 
+    &__plus {
+    }
+
+    &__minus {
+    }
+
+    &__remove {
+    }
+
+    &__row{
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
-.adress {
 
-    &__buttons {
-        @include dflex(center,wrap,flex-start);
-        margin-top: rem(43);
-    }
-
-    &__btn {
-        @include dflex(center,wrap,center);
-        width: 159px;
-        height: 45px;
-        border: 1px solid #000000;
-        background-color: #ffffff;
-    }
-}
 
 
 
