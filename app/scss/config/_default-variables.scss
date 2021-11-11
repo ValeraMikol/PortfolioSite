@@ -1,5 +1,6 @@
 // Fonts
-$f-main: 'Lato', sans-serif;
+$f-main: 'Lato',
+sans-serif;
 
 // Font sizes
 $fz-root: 16;
@@ -10,7 +11,7 @@ $c-white-300: #f1f1f1;
 $c-black: #000;
 $c-blue: #3880C0;
 
-$wrap: 1818px;
+$wrap: 1798px;
 $wrapRem: 1818;
 $wrap-content: calc(1295px + 30px);
 
@@ -25,6 +26,4 @@ $xl: 1024;
 $time-fast: 300ms;
 
 // Timing functions
-$timing-functions: (
-  'easeInOutCubic': cubic-bezier(0.645, 0.045, 0.355, 1)
-);
+$timing-functions: ('easeInOutCubic': cubic-bezier(0.645, 0.045, 0.355, 1));

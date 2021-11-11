@@ -5,13 +5,12 @@
     top: 0;
     left: 0;
     z-index: 50;
-    
-    &__container {
-        
-    }
+
+    &__container {}
 
     &__body {
         @include dflex(center, wrap, space-between);
+
     }
 }
 
@@ -19,21 +18,27 @@
     padding: 0;
     @include dflex(center, wrap, space-between);
     list-style-type: none;
-    &__item {  
-        
+
+    &__item {
+
         margin-right: rem(16);
+
         &:last-child {
             margin: 0;
         }
+
         &:hover {
             transition: 0.2s;
-            .stories__block{
-                display: block;  
+
+            .stories__block {
+                transition: 0.3s;
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
-    
-    
+
+
 }
 
 .link {
@@ -45,46 +50,49 @@
     font-size: rem(16);
     font-weight: 300;
     text-transform: uppercase;
-    
+
 }
 
 .header-logo {
     position: relative;
-
+    z-index: 50;
 
     &__img {
         @include adapt-img;
-        
+
     }
 }
+
 /*----------stories------------------------------------------------------------------------------------------------*/
 
 .stories {
-    
-       
+
+
 
     &__block {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;        
+        width: 100%;
     }
 }
+
 .header-block {
     background-color: #fff;
     padding: rem(194) 0 rem(85) 0;
-    
-   &__top{
-       
-       @include dflex(flex-start,wrap,space-between);
-       max-width:rem(550);        
-   }
+
+    &__top {
+
+        @include dflex(flex-start, wrap, space-between);
+        max-width: rem(550);
+    }
 
 
     &__container {
-       position: relative;
-       
+        position: relative;
+
     }
 
     &__name {
@@ -98,15 +106,15 @@
     }
 
     &__text {
-        
+
         margin-bottom: rem(31);
         color: #000000;
         font-family: Lato;
         font-size: rem(16);
         font-weight: 300;
         text-transform: uppercase;
-        
-       
+
+
     }
 
     &__text--bottom {
@@ -118,7 +126,7 @@
         margin-top: rem(110);
     }
 
-    &__get{
+    &__get {
         position: absolute;
         top: 0;
         right: 0;
@@ -127,31 +135,34 @@
         font-size: rem(16);
         font-weight: 300;
         text-transform: uppercase;
-        cursor: pointer;   
+        cursor: pointer;
     }
 }
 
 .search-form {
-    
+
     width: rem(227);
-    border-bottom: 1px solid #939598; 
+    border-bottom: 1px solid #939598;
     margin-bottom: rem(31);
     padding: rem(22) 0;
     color: #939598;
-    input{
+
+    input {
         display: block;
-        border: none;  
+        border: none;
     }
 }
+
 .header-block {
 
-		&__text {
-            margin-right: rem(30);
-            &:first-child{
-                margin-right: 0;
-            }
-            
-		}
+    &__text {
+        margin-right: rem(30);
+
+        &:first-child {
+            margin-right: 0;
+        }
+
+    }
 }
 
 /*----------assistanse------------------------------------------------------------------------------------------------*/
@@ -168,54 +179,89 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
 .assistanse-form {
+    display: relative;
+    display: flex;
     width: rem(227);
-    border-bottom: 1px solid #939598; 
+    border-bottom: 1px solid #939598;
     margin-bottom: rem(31);
     padding: rem(22) 0;
     color: #939598;
 }
+
 .assistanse-email {
     border: none;
+
 }
+
+
+
+.assistance-btn {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 23%;
+    right: 70%;
+    width: rem(227);
+    height: rem(45);
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.assistance-bottomtext {
+    color: #030303;
+    font-family: Lato;
+    font-size: rem(14);
+    font-weight: 300;
+    max-width: rem(229);
+}
+
 
 /*--------------adress--------------------------------------------------------------------------------------------*/
 .header-block {
 
-    &__container {
-    }
+    &__container {}
 }
 
 /*--------------cart--------------------------------------------------------------------------------------------*/
 .card-page {
 
     &__title {
-        margin-bottom: rem(50)
+        margin-bottom: rem(50);
+        color: #000000;
+        font-family: Lato;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 
-    &__body {
-        
-    }
+    &__body {}
 
     &__columns {
-        @include dflex(center,nowrap,space-between);
+        @include dflex(center, nowrap, space-between);
     }
 
-    &__column {         
+    &__column {
         flex: 1 1 25%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         position: relative;
         margin-right: rem(50);
+
+        &:last-child {
+            margin: 0;
+        }
     }
 }
+
 .item-card {
-    
+
     &__img {
-        @include dflex (center,wrap,center);
-        width: 143px;
-        height: 178px;
+        @include dflex (center, wrap, center);
+        width: rem(200);
+        height: rem(275);
         border: 1px solid #000000;
         opacity: 0.85;
 
@@ -223,10 +269,15 @@
 
     &__body {
         display: flex;
-        flex-direction: column;         
+        flex-direction: column;
         height: 100%;
+        color: #000000;
+        font-family: Lato;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 }
+
 .card-body {
 
     &__name {
@@ -234,74 +285,77 @@
     }
 
     &__price {
-        margin-bottom: rem(79);
+        margin-bottom: rem(170);
     }
 
     &__quantity {
         margin-right: rem(50);
-        
+
     }
 
-    &__plus {
-        
-    }
+    &__plus {}
 
     &__minus {
-        margin-right: rem(5);
+        margin-right: rem(8);
     }
 
     &__remove {
         margin-top: rem(20);
     }
 
-    &__row{
+    &__row {
         flex: 1 1 50%;
         display: flex;
-        
+
     }
 }
+
 .card-page {
 
     &__column {
-        
+
         height: 100%;
     }
 }
+
 .item-total {
     display: flex;
     flex-direction: column;
-    
-    
-    
+    transform: translateY(105px);
+
+
+
+
 
     &__body {
         display: flex;
         justify-content: space-between;
         width: 100%;
-  
-        
+        color: #000000;
+        font-family: Lato;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 
     &__button {
         width: 100%;
-        height: 47px;
+        height: rem(47);
         border: 1px solid #000000;
         background-color: #ffffff;
-        opacity: 0.5;
+
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #000000;
+        font-family: Lato;
+        font-weight: 300;
+        text-transform: uppercase;
     }
 }
+
 .item-total {
 
-    &__subtotal {
-    }
+    &__subtotal {}
 
-    &__price {
-    }
+    &__price {}
 }
-
-
-
-
