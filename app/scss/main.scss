@@ -17,8 +17,3 @@
 @import "./components/menu";
 
 // MAIN PAGE
-
-.container {
-    @include container(rem($wrapRem)); 
-     
- }
