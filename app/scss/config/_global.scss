@@ -25,9 +25,3 @@ body {
     font-size: 13px;
   }
 }
-
-.container {
-  @include container(rem($wrapRem));
-  padding: 0 rem(10);
-  margin: 0 auto;
-}

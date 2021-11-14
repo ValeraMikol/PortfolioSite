@@ -3,6 +3,13 @@
 @import "./config/default-variables";
 @import "./config/global";
 @import "./utils/functions";
+
+.container {
+  @include container(1200);
+  padding: 0 rem(20);
+  margin: 0 auto;
+}
+
 @import "./components/index";
 @import "./components/blocks/header";
 @import "./components/blocks/menu";

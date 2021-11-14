@@ -7,7 +7,15 @@
     &__bg {
         position: relative;
         display: block;
+    }
 
+    &-img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
     }
 
     &__subtitle {
@@ -27,15 +35,6 @@
         line-height: rem(27);
         text-transform: uppercase;
     }
-}
-
-.firstscreen-img {
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 1;
 }
 
 /*------------CATEGORIES----------------------------------------------------------------------*/

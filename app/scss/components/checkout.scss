@@ -38,6 +38,7 @@
         margin-bottom: rem(70);
         padding: rem(22) 0;
         color: #939598;
+
     }
 
     &__option {
@@ -46,11 +47,29 @@
 
     &__subname {
         margin-top: rem(100);
+        margin-bottom: rem(50);
         color: #010101;
         font-family: Lato;
-        font-size: rem(12);
+        font-size: rem(16);
+        font-weight: bold;
         line-height: rem(35);
         text-transform: uppercase;
+    }
+
+    &__radio {
+        margin-bottom: rem(173);
+        transform: translateY(20%);
+
+        label {
+            width: 100%;
+            color: #282828;
+            font-family: Lato;
+            font-size: rem(12);
+            font-weight: 300;
+            line-height: rem(20);
+            text-align: center;
+
+        }
     }
 }
 
@@ -64,18 +83,24 @@
     margin-bottom: rem(55);
 
     &__name {
+        color: #282828;
+        opacity: 0.5;
         font-family: Lato;
         text-transform: uppercase;
         margin-bottom: rem(50);
     }
 
     &__plus {
+        color: #282828;
+        opacity: 0.5;
         position: absolute;
         top: 0;
         right: 0;
     }
 
     &__total {
+        color: #282828;
+        opacity: 0.5;
         position: absolute;
         top: 0;
         right: 0;
@@ -88,21 +113,20 @@
         line-height: rem(33);
     }
 
-    &__icon {
-
-
-        &--paypal {
-            transform: translateX(-25%);
-        }
-    }
+    &__icon {}
 
     &__methods {
+        color: #282828;
         position: absolute;
         top: 50%;
         right: 0;
         transform: translateY(-50%);
 
     }
+}
+
+.img-pay {
+    transform: translateX(-27%);
 }
 
 .item-chekout {
