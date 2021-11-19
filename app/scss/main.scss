@@ -10,6 +10,7 @@
   margin: 0 auto;
 }
 
+
 @import "./components/index";
 @import "./components/blocks/header";
 @import "./components/blocks/menu";
@@ -24,5 +25,10 @@
 @import "./components/menu";
 @import "./components/checkout";
 @import "./components/thankyou";
+@import "./components/accountdetails";
+@import "./components/create";
+@import "./components/orders";
+@import "./components/hellopage";
+@import "./components/wishlist";
 
 // MAIN PAGE

@@ -44,17 +44,20 @@
 		}
 
 		&__text {
-            margin: 0 auto;
-            max-width:rem(892) ;
-            color: #000000;
-            font-family: Lato;
-            font-size: rem(20);
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
-            text-align: justify;
-            padding: rem(194) 0;
+                  margin: 0 auto;
+                  max-width:rem(892) ;
+                  color: #000000;
+                  font-family: Lato;
+                  font-size: rem(20);
+                  font-weight: 300;
+                  font-style: normal;
+                  letter-spacing: normal;
+                  line-height: normal;
+                  text-align: justify;
+                  padding: rem(194) 0;
+                  &:hover{
+                        text-decoration: underline;
+                  }
 		}
 
 		&__bottomimg {
