@@ -79,6 +79,24 @@
         z-index: 2;
     }
 }
+.stories-block {
+
+    &__body {
+    }
+
+    &__row {
+        @include dflex(flex-start,wrap,flex-start);
+        margin-bottom: rem(25);
+    }
+
+    &__column {
+        
+    }
+
+    &__text {
+    }
+}
+
 
 .header-block {
     background-color: #fff;
