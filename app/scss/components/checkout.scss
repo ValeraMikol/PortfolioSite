@@ -39,13 +39,28 @@
 }
 
 .item-checkout {
+    &__formtext{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
 
     &__form {
+        position: relative;
         max-width: rem(449);
         border-bottom: 1px solid #939598;
         margin-bottom: rem(70);
         padding: rem(22) 0;
         color: #939598;
+
+        &.mistakeform{
+            border-bottom: 1px solid #f80606;
+           
+            color: red;
+        }
 
     }
 
@@ -77,6 +92,9 @@
     &__radio {
         margin-bottom: rem(173);
         transform: translateY(20%);
+        &.notactive{
+            color: red;
+        }
 
         label {
             width: 100%;
@@ -85,15 +103,27 @@
             font-size: rem(12);
             font-weight: 300;
             line-height: rem(20);
-            text-align: center;
+            
 
+        }
+    }
+
+    &__radiotext{
+        &.notactive{
+            color: red;
         }
     }
 }
 
 .item-login {
-
-    &__email {}
+    
+    &__email {
+        
+        text-transform: uppercase;
+        &.mistakeform{ 
+            color: red;
+        }
+    }
 }
 
 .option-item {
@@ -140,6 +170,9 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%);
+        &.red{
+            color: red;
+        }
 
     }
 }
@@ -166,6 +199,9 @@
         line-height: rem(19.43);
         text-transform: uppercase;
         cursor: pointer;
+    }
+    &__radiotext{
+        
     }
 }
 

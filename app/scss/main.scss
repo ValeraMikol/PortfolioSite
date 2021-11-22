@@ -4,10 +4,13 @@
 @import "./config/global";
 @import "./utils/functions";
 
-.container {
-  @include container(1200);
+.container { 
+  @include container(rem($wrapRem));
   padding: 0 rem(20);
   margin: 0 auto;
+}
+.header{
+  padding-top:0;
 }
 
 
@@ -30,5 +33,7 @@
 @import "./components/orders";
 @import "./components/hellopage";
 @import "./components/wishlist";
+@import "./components/storepolicy";
+@import "./components/contact";
 
 // MAIN PAGE

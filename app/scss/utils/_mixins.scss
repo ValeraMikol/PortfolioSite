@@ -140,7 +140,7 @@
   height: $size + px;
 }
 
-@mixin container($mw: 1170px) {
+@mixin container($mw: 1178px) {
   display: block;
   margin: 0 auto;
   max-width: $mw;

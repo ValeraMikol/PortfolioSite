@@ -1,5 +1,5 @@
 .wishlist {
-
+    
     &__container {
     }
 
@@ -8,7 +8,9 @@
         margin-top: rem(41);
     }
 }
-
+.wishlist-header{
+    padding-top:rem(32) ;
+}
 
 .wishlist{
     margin-bottom: rem(220);

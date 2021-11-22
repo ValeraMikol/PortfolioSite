@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    padding-top: rem(31);
+    padding-top: rem(32);
     position: absolute;
     top: 0;
     left: 0;
@@ -10,7 +10,20 @@
 
     &__body {
         @include dflex(center, wrap, space-between);
+        
 
+    }
+    &__number{
+        position: absolute;
+        right: 2.2%;
+        top: 50%;
+        
+        z-index: 52;
+        color: #000000;
+        font-family: Lato;
+        font-size: rem(10);
+        font-weight: 300;
+        text-transform: uppercase;
     }
 }
 
@@ -18,6 +31,8 @@
     padding: 0;
     @include dflex(center, wrap, space-between);
     list-style-type: none;
+   
+    
 
     &__item {
         
@@ -35,6 +50,12 @@
                 opacity: 1;
                 visibility: visible;
             }
+            .shopmenu__block {
+                transition: 0.3s;
+                opacity: 1;
+                visibility: visible;
+            }
+
         }
     }
 
@@ -56,10 +77,17 @@
 .header-logo {
     position: relative;
     z-index: 50;
+    width: rem(313);
 
     &__img {
-        @include adapt-img;
+        position: relative;
+        width: 100%;
+        height: 100%;
 
+        img {
+            display: block;
+            max-width: 100%;
+        }
     }
 }
 
@@ -96,22 +124,35 @@
     &__text {
     }
 }
+.aboutmenu-block{
+
+    &__text{
+        margin-bottom: rem(31);
+        color: #000000;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        max-width: rem(570);  
+    }
+    &__get{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #000000;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding-right: rem(15);
+    }
+}
 
 
 .header-block {
     background-color: #fff;
     padding: rem(194) 0 rem(85) 0;
-    &__number{
-        position: absolute;
-        right: 0.5%;
-        top: 50%;
-        z-index: 52;
-        color: #000000;
-        font-family: Lato;
-        font-size: rem(10);
-        font-weight: 300;
-        text-transform: uppercase;
-    }
+    
     &__top {
 
         @include dflex(flex-start, wrap, space-between);
@@ -156,15 +197,7 @@
     }
 
     &__get {
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: #000000;
-        font-family: Lato;
-        font-size: rem(16);
-        font-weight: 300;
-        text-transform: uppercase;
-        cursor: pointer;
+       
     }
 }
 
@@ -268,11 +301,12 @@
     &__body {}
 
     &__columns {
-        @include dflex(center, nowrap, space-between);
+        @include dflex(flex-end, wrap, space-between);
     }
 
     &__column {
-        flex: 1 1 25%;
+        flex: 1 1 20%;
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -339,18 +373,12 @@
     }
 }
 
-.card-page {
 
-    &__column {
-
-        height: 100%;
-    }
-}
 
 .item-total {
     display: flex;
     flex-direction: column;
-    transform: translateY(105px);
+    
 
 
 
@@ -369,6 +397,7 @@
     &__button {
         width: 100%;
         height: rem(47);
+        margin-top: rem(35);
         border: 1px solid #000000;
         background-color: #ffffff;
 
@@ -383,6 +412,7 @@
 }
 
 .item-total {
+    
 
     &__subtotal {}
 
@@ -463,5 +493,48 @@
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: rem(132);
+    }
+}
+.shopmenu {
+
+    &__block {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+}
+.header-block {
+
+    &__container {
+    }
+}
+
+.shopmenu-block {
+
+    &__body {
+        @include dflex(flex-start,wrap,space-between);
+        max-width: rem(604);
+        
+    }
+
+    &-top{
+        margin-bottom: rem(25);
+    }
+
+    &__column {
+             
+    }
+
+    &__text {
+        color: #000000;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        text-align: left;
+        text-transform: uppercase;
     }
 }

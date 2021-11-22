@@ -115,20 +115,31 @@
 }
 
 .item-column {
-
-      &__img {}
-
-      &__body {
-            @include dflex(flex-start, wrap, space-between);
-            padding: rem(38) rem(50) 0 rem(50);
+       
+      &__img {
+           img{
+                 display: block;
+                 height: 100%;
+                 width: 100%
+           }
+                        
       }
-
-      &__price {
+      &__name{
             color: #070707;
             font-family: Lato;
             font-size: rem(16);
             font-weight: 300;
             text-transform: uppercase;
+            text-decoration: none;
+      }
+      &__body {
+            @include dflex(flex-start, wrap, space-between);
+            padding: rem(38) rem(50) 0 rem(50);
+            
+      }
+
+      &__price {
+            
       }
 
       &__icon {
@@ -149,10 +160,13 @@
 }
 
 .product-image {
+      display: block;
+      max-height:rem(618) ;
       z-index: 2;
       width: 100%;
       position: relative;
       transition: 0.5s;
+      
 
       &__active {
             position: absolute;
