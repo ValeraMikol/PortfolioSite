@@ -10,9 +10,7 @@
     text-decoration: none;
   }
 }
-.main-column__body{
-    
-}
+
 
 .main {
     
@@ -28,8 +26,6 @@
         height: auto;
     }
 
-    &__columns--1 {
-    }
 
     &__img {
         &--2{
@@ -224,13 +220,10 @@
         margin: rem(164) 0 rem(85) 0;
     }
 
-    &__column {
-    }
+    
 }
 .item-column {
 
-    &__img {
-    }
 
     &__body {
         @include dflex(flex-start,wrap,space-between);
