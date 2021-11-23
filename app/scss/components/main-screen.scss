@@ -42,7 +42,13 @@
 }
 
 /*------------CATEGORIES----------------------------------------------------------------------*/
-
+.item-category__img{
+    display: block;
+    overflow: hidden;
+    max-height: rem(1196);
+    height: auto;
+    width: 100%;
+}
 .categories {
 
 
@@ -62,10 +68,6 @@
         position: relative;
         flex: 1 1 50%;
         transition: 0.3s;
-        img{
-            width: 100%;
-            height: 100%;
-        }
         &:hover img {
             opacity: 0;
             transition: 0.3s;
@@ -116,7 +118,7 @@
     left: 50%;
     bottom: 15%;
     text-align: justify;
-    max-width: rem(300);
+    max-width: rem(351);
     transform: translateX(-50%);
     color: #040404;
     font-family: Lato;

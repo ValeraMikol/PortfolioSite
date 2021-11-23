@@ -1,6 +1,6 @@
 .stories-header{
     position: relative;
-    margin: 0;
+    
 }
 .stories {
 
@@ -41,7 +41,8 @@
 		}
 
 		&__img {
-            flex: 1 1 50%;    
+            flex: 1 1 50%; 
+            
 		}
 
 		&__text {
@@ -66,6 +67,7 @@
 		}
 }
 .img-stories{
+    display: block;
     width: 100%;
-    height: auto;
+    max-height: rem(1196);           
 }

@@ -45,11 +45,8 @@
     }
 
     &__columns--2 {
-        position: sticky;
-        top:0;
-        right: 0;
-       
-        height: rem(1195);
+        
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -58,16 +55,10 @@
     }
 }
 .main-item-column {
-    
+    max-height: rem(559);
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    
-    
-    
-    
-    
-
     &__price {
         color: #070707;
         font-family: Lato;
@@ -140,8 +131,10 @@
 }
 .item-cart {
     @include dflex(center,wrap,space-between);
-    width: 561px;
-    height: 64px;
+    width: 100%;
+    max-width: rem(561);
+    height: auto;
+    max-height: rem(64);
     border: 1px solid #000000;
     background-color: #ffffff;
     
@@ -169,7 +162,7 @@
         font-family: Lato;
         font-size: rem(16);
         font-weight: 300;
-        line-height: 26.97px;      
+        line-height: rem(26.97);      
         text-transform: uppercase;
         cursor: pointer;
         transition: 0.5s;
@@ -208,9 +201,11 @@
         font-family: Lato;
         font-size: rem(16);
         font-weight: 300;    
+        cursor: pointer;
     }
 }
 .main-column__body{
+    padding-top: rem(291);
     max-width: rem(601);
     margin-top: rem(-25)  
 }
@@ -265,6 +260,5 @@
         cursor: pointer;
     }
 }
-.product-image {
-}
+
 

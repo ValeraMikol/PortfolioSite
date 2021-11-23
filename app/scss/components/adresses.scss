@@ -1,3 +1,7 @@
+.adresses-header{
+    position: relative;
+}
+
 .adress {
 
     &__list {    
@@ -49,12 +53,14 @@
 .item-adress {
 
     &__name {
+        margin-bottom: rem(45);
         color: #000000;
         font-family: Lato;
         font-size: rem(16);
         font-weight: 300;
         line-height: rem(20);
         text-transform: uppercase;
+
     }
 
     &__form {
@@ -63,9 +69,11 @@
         margin-bottom: rem(31);
         padding: rem(22) 0;
         color: #939598;
+        
         input{
             display: block;
             border: none;  
+            text-transform: uppercase;
         }
 
     }
@@ -103,5 +111,6 @@
         background-color: #ffffff;
         margin-right: rem(22);
         cursor: pointer;
+        
     }
 }
