@@ -46,7 +46,9 @@
 
     &__column {
         flex: 1 1 50%;
-        position: relative;    
+        position: relative;
+        max-width: rem(470);
+        margin-right: rem(400);    
         
     }
 }
@@ -64,7 +66,7 @@
     }
 
     &__form {
-        width: rem(338);
+        width: 100%;
         border-bottom: 1px solid #939598; 
         margin-bottom: rem(31);
         padding: rem(22) 0;
@@ -80,7 +82,7 @@
 
     &__edit { 
         position: absolute;
-        right: 63%;
+        right: 0;
         top: 0;
         color: #000000;
         font-family: Lato;

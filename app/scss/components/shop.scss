@@ -41,10 +41,10 @@
 .filters-menu {
       width: 100%;
       height: 0;
-      display: block;
+      display: none;
       &.active{
             transition: all 0.3s;
-            display: block;
+            display: none;
             height: auto; 
       }
 

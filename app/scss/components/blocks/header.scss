@@ -111,8 +111,6 @@
 
 .stories {
 
-
-
     &__block {
         opacity: 0;
         visibility: hidden;
@@ -145,6 +143,9 @@
         font-size: rem(16);
         font-weight: 300;
         max-width: rem(570);  
+    }
+    &__subtext{
+        margin-top: rem(59);
     }
     &__get{
         position: absolute;
@@ -217,6 +218,62 @@
         border: none;
     }
 }
+.search {
+
+    &__body {
+        display: block;
+        
+    }
+}
+.noresult {
+    display: flex;
+    display: none;
+
+    &__item {
+        color: #000000;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &__item-result {
+        margin-left: rem(5);
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+.result{
+    display: none;
+    &__top{
+        position: relative;
+        display: flex;
+        margin-bottom: rem(30);
+    }
+    &__body{
+        
+    }
+    &__columns{
+       display: flex;
+    }
+    &__column{
+        flex: 1 1 25%;
+
+    }
+    &__count{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family: Lato;
+        font-size: rem(16);
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+
 
 .header-block {
 
@@ -236,6 +293,7 @@
 .assistanse-link {
     display: block;
     margin-bottom: rem(32);
+    max-width:rem(200) ;
     color: #000000;
     font-family: Lato;
     font-size: rem(16);
@@ -248,9 +306,10 @@
 .assistanse-form {
     display: relative;
     display: flex;
-    width: rem(227);
+    max-width: rem(320);
+    width: 100%;
     border-bottom: 1px solid #939598;
-    margin-bottom: rem(31);
+    margin-bottom: rem(25);
     padding: rem(22) 0;
     color: #939598;
 }
@@ -263,15 +322,18 @@
 
 
 .assistance-btn {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     position: absolute;
-    bottom: 23%;
-    right: 70%;
-    width: rem(227);
-    height: rem(45);
+    bottom: 20.2%;
+    right: 62.5%;
+    width: 100%;
+    max-width: rem(315);
+    height: 100%;
+    max-height: rem(62);
     border: 1px solid #000000;
     background-color: #ffffff;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -306,8 +368,9 @@
     &__column {
         flex: 1 1 20%;
         height: 100%;
+        max-height: rem(300);
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-end;
         position: relative;
         margin-right: rem(50);
@@ -322,6 +385,7 @@
 
     &__img {
         @include dflex (center, wrap, center);
+        margin-right: rem(20);
         width: rem(200);
         height: rem(275);
         border: 1px solid #000000;
@@ -399,7 +463,7 @@
 
     &__button {
         width: 100%;
-        height: rem(47);
+        height: rem(60);
         margin-top: rem(35);
         border: 1px solid #000000;
         background-color: #ffffff;
@@ -439,13 +503,12 @@
     &__column {
         position: relative;
         flex: 0 0 50%;
-        max-width: rem(339);
+        max-width: rem(460);
         height: auto;
-        margin-right: rem(80);
+        margin-right: rem(120);
     }
 
     &__login__bottomtext {
-
         color: #000000;
         font-size: rem(12);
         font-weight: 300;
@@ -458,11 +521,11 @@
 .item-login {
 
     &__name {
-        margin-bottom: rem(40);
+        margin-bottom: rem(20);
         color: #000000;
         font-family: Lato;
         font-weight: 300;
-        line-height: rem(28);
+        line-height: rem(25);
         text-transform: uppercase;
 
     }
@@ -470,7 +533,7 @@
     &__form {
         width: 100%;
         border-bottom: 1px solid #939598;
-        margin-bottom: rem(31);
+        margin-bottom: rem(21);
         padding: rem(22) 0;
         color: #939598;
     }
@@ -489,7 +552,7 @@
     &__btn {
         margin: rem(40) 0 rem(28) 0;
         width: 100%;
-        height: rem(45);
+        height: rem(65);
         border: 1px solid #000000;
         background-color: #ffffff;
         text-transform: uppercase;
@@ -502,7 +565,8 @@
         font-family: Lato;
         font-weight: 300;
         text-transform: uppercase;
-        margin-bottom: rem(132);
+        margin-bottom: rem(112);
+        margin-top: rem(40);
     }
 }
 .shopmenu {
