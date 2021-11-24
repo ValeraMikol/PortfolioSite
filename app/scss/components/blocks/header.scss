@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     z-index: 50;
+    
 
     &__body {
         @include dflex(center, wrap, space-between);
@@ -322,8 +323,8 @@
 
 
 .assistance-btn {
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     bottom: 20.2%;
     right: 62.5%;
@@ -335,6 +336,10 @@
     background-color: #ffffff;
     text-transform: uppercase;
     cursor: pointer;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .assistance-bottomtext {
