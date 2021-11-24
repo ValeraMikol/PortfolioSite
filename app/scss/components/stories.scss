@@ -32,7 +32,7 @@
             text-align:justify ;
             color: #000000;
             font-weight: 300;
-            font-size: rem(17);
+            font-size: rem(20);
             line-height: rem(28.07);
 		}
 
@@ -57,9 +57,7 @@
                   line-height: normal;
                   text-align: justify;
                   padding: rem(194) 0;
-                  &:hover{
-                        text-decoration: underline;
-                  }
+                  
 		}
 
 		&__bottomimg {
