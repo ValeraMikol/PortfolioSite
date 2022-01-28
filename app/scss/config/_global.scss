@@ -16,12 +16,26 @@ body {
   height: 100vh;
 }
 
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
 }
 
-@media (max-width: 1600px) {
-  html {
-    font-size: 13px;
-  }
-}
+// @media (max-width: 1600px) {
+//   html {
+//     font-size: 13px;
+//   }
+// }

@@ -1,0 +1,130 @@
+.nft {
+    padding-top: rem(75);
+    // .nft__container
+
+    &__container {
+    }
+
+    &__title{
+        font-weight: bold;
+        font-size: rem(34);
+        line-height: rem(40);
+        margin-bottom: rem(25);
+    }
+
+    // .nft__body
+
+    &__body {
+        margin-bottom: rem(100);
+    }
+
+    // .nft__columns
+
+    &__columns {
+        @include dflex(center,wrap,flex-start);
+    }
+
+    // .nft__column
+
+    &__column {
+        flex: 1 1 18%;
+    margin-right: rem(5);
+    margin-bottom: rem(5);
+    max-width: rem(250);
+    @media (max-width:1280px){
+        max-width: 100%;
+        flex: 1 1 20%;
+    }
+    @media (max-width:920px){
+        max-width: 100%;
+        flex: 1 1 25%;
+    }
+    @media (max-width:640px){
+        max-width: 100%;
+        flex: 1 1 33.333%;
+    }
+    @media (max-width:420px){
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+        max-height: rem(211);
+        border-radius: 6px 6px 0px 0px;
+    }
+    }
+}
+
+.item-nft {
+
+    // .item-nft__img
+
+    &__img {
+    }
+
+    // .item-nft__bottombody
+
+    &__bottombody {
+        @include dflex(center,wrap,space-between);
+        padding: rem(20) rem(15) rem(15) rem(15);
+        background: #F8F8F8;
+    }
+
+    // .item-nft__bottomcolumn
+
+    &__bottomcolumn {
+    }
+
+    // .item-nft__bottomname
+
+    &__bottomname {
+        font-weight: bold;
+        font-size: rem(14);
+        line-height: rem(20);
+        display: block;
+    }
+
+    // .item-nft__bottomsubname
+
+    &__bottomsubname {
+        font-size: rem(12);
+        line-height: rem(15);
+        color: #7D65E9;
+    }
+
+    // .item-nft__columnbody
+
+    &__columnbody {
+        background: #E7E7E8;
+        border-radius: 6px;
+        padding: rem(7) rem(7) rem(7) rem(17);
+        text-align: right;
+    }
+
+    // .item-nft__text
+
+    &__text {
+        font-size: rem(10);
+        line-height: rem(15);
+        color: rgba(19, 17, 29, 0.98);
+    }
+
+    // .item-nft__price
+
+    &__price {
+        font-weight: bold;
+        font-size: rem(12);
+        line-height: rem(15);
+        color: rgba(19, 17, 29, 0.98);
+        &::before{
+            content: "";
+            display: inline-block;
+            background: url("../../../img/ethicon.svg") 0 0 no-repeat;
+            width: rem(7);
+            height: rem(12);
+            padding-right: rem(5);
+        }
+    }
+}

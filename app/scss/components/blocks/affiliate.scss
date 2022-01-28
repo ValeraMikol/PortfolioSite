@@ -1,0 +1,67 @@
+.program {
+    padding-top:75px ;
+    // .program__container
+
+    &__container {
+    }
+
+    // .program__title
+
+    &__title {
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: bold;
+        color: #181622;
+        margin-bottom: rem(25);
+    }
+
+    // .program__body
+
+    &__body {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    // .program__column
+
+    &__column {
+        margin-bottom: 45px;
+        &:last-child{
+            margin-bottom: rem(90);
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // .program__img
+
+    &__img {
+        margin-bottom: rem(20);
+    }
+
+    // .program__text
+
+    &__text {
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+.contact {
+
+    // .contact__navbtns
+
+    &__navbtns {
+    }
+
+    // .contact__navbtn
+
+    &__navbtn {
+    }
+}
+.navbtns {
+}
+.navbtn {
+}
